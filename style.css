@@ -219,8 +219,9 @@ ul {
   overflow: hidden;
 }
 
+
 .girl-img {
-  width: 30vw;
+  width: 70vw;
   z-index: 20;
 }
 
@@ -240,6 +241,13 @@ ul {
   gap: 36px;
   align-items: center;
   text-align: center;
+}
+.hero-actions{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-text-area {
@@ -343,9 +351,10 @@ ul {
   border-radius: 10px;
   z-index: 20;
   position: absolute;
-  top: 50%;
-  left: -16%;
+  top: 54%;
+  left: -10%;
   padding: 10px 20px;
+  
 }
 
 .rating-score {
@@ -369,7 +378,7 @@ ul {
 
 .resume-count-box {
   background-color: white;
-  position: sticky;
+  position: absolute;
   z-index: 40;
   height: min-content;
   padding: 8px 16px;
@@ -377,8 +386,8 @@ ul {
   display: flex;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
-  top: 52%;
-  right: -10%;
+  right: -16%;
+  top: 76%;
 }
 
 .resume-count-box .count {
@@ -455,6 +464,16 @@ ul {
   font-size: 0.9rem;
 }
 
+@media (min-width: 415px) and (max-width: 767px) {
+  .circle {
+    width: 80vw;
+    height: 80vw;
+  }
+  .inner-circle{
+    width: 60vw;
+    height: 60vw;
+  }
+}
 /* --------------------
     Responsiveness
 -------------------- */
@@ -487,6 +506,20 @@ ul {
     justify-content: space-between;
   }
 
+  .hero-subtitle{
+    max-width: 70%;
+  }
+  
+
+  .rating-box{
+    scale: 1;;
+  }
+
+  .hero-actions{
+    flex-direction: row;
+    justify-content: flex-start
+  }
+
   .hero-text-area h1 {
     font-size: 3.5rem;
   }
@@ -497,6 +530,11 @@ ul {
     right: -10;
     margin-top: 0;
     background-color: white;
+    scale: 1;
+  }
+  .girl-img{
+    width: 40vw;
+    bottom: 0;
   }
 
   .btn-quote {
@@ -518,6 +556,9 @@ main{
   }
   .main-nav {
     flex-grow: 1;
+  }
+  .girl-img {
+    width: 30vw;
   }
 
   .hero-text-area h1 {
